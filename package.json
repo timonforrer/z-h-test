@@ -1,0 +1,18 @@
+{
+  "name": "z-h-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "run-p dev:sanity dev:netlify",
+    "dev:sanity": "cd studio && sanity start",
+    "dev:netlify": "netlify dev:exec npm run dev:11ty",
+    "dev:11ty": "cd website && npx @11ty/eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
