@@ -8,3 +8,9 @@
   }
 }
 ---
+
+<ul>
+  {% for key, article in articles %}
+  <li><a href="/{{ article.pageBase.slug.current }}">{{ article.pageBase.title }}</a></li>
+  {% endfor %}
+</ul>
