@@ -2,3 +2,4 @@
 **/netlify/functions/preview/**
 !**/netlify/functions/preview/index.js
 website/.cache
+**/dist
