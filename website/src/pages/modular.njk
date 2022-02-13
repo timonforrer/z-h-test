@@ -1,0 +1,17 @@
+<nav>
+  <ul>
+    {% for id, _page in modular_pages %}
+      {% set isDraft = (id.split('.')[0] === 'drafts') %}
+      {% if isDraft === false %}
+      <li><a href="/{{ _page.slug }}">{{ _page.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>
+<pre>
+  {{- _data|dump(2) -}}
+</pre>
+<pre>
+  {{- modular_pages|dump(2) -}}
+</pre>
+
