@@ -28,14 +28,14 @@ export default {
         slugify: asyncSlugifier
       }
     },
-    {
-      name: 'parent',
-      title: 'Parent',
-      type: 'reference',
-      to: [
-        // list all desired page types
-        { type: 'modularPage' },
-      ],
-    },
+    // {
+    //   name: 'parent',
+    //   title: 'Parent',
+    //   type: 'reference',
+    //   to: [
+    //     // list all desired page types
+    //     { type: '' },
+    //   ],
+    // },
   ],
 }
