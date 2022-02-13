@@ -1,0 +1,19 @@
+
+{#
+  idealerweise kommt die struktur für die navigation aus dem CMS
+  das nachfolgende objekt sollte das repräsentieren...
+#}
+
+{% set nav = [
+  { title: 'Home', path: '/' },
+  { title: 'News', path: '/news' }
+]%}
+
+
+<nav>
+  <ul>
+    {% for item in nav %}
+    <li><a href="{{ item.path }}">{{ item.title }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
