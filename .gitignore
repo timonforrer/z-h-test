@@ -1,6 +1,4 @@
 **/node_modules
 **/netlify/functions/preview/**
 !**/netlify/functions/preview/index.js
-studio/dist
 website/.cache
-website/dist
