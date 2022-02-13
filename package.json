@@ -7,7 +7,9 @@
     "dev": "run-p dev:sanity dev:netlify",
     "dev:sanity": "cd studio && sanity start",
     "dev:netlify": "netlify dev:exec npm run dev:11ty",
-    "dev:11ty": "cd website && npx @11ty/eleventy --serve"
+    "dev:11ty": "cd website && npx @11ty/eleventy --serve",
+    "build": "npm run build:11ty",
+    "build:11ty": "cd website && npx @11ty/eleventy"
   },
   "keywords": [],
   "author": "",
